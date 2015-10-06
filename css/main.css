@@ -69,21 +69,33 @@ height: 400px;
 }
 .about-me{
     height: 400px;
-   border: red solid 1px;
+   border: #BDEB43 solid 1px;
+    overflow:auto;
+}
+.about-me:hover{
+    cursor: pointer;
+      border: #BDEB43 solid 5px;
+    border-style: double;
+     background-blend-mode: screen;
 }
 .about-head{
-    background: red;
-    height: 10%;
+    text-align: center;
+    height: auto;
     margin-left: -11px;
     width: 110%;
+    color: #BDEE38;
+    text-decoration: underline;
+    text-decoration-color: #BDEE38;
+    text-decoration-style: dashed;
 }
 .about-body{
-    height: 80%;
-    background: yellow;
+    height: auto;
+    text-align: center;
+    
 }
 .about-footer{
     height: 10%;
-    background: red;
+    background: #CBF439;
      margin-left: -11px;
     width: 110%;
 }
