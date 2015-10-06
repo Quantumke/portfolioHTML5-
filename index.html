@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/materialize.css">
 		<script   type="text/javascript" src="js/materialize.js"></script>
+		<link rel="stylesheet" href="css/main.css">
 
 	</head>
 	<body>
@@ -28,6 +29,12 @@
 					<h1 class="main-title">ARE YOU LOOKING FOR A WORLD CLASS <span class="thin">DEV?</span></h1><br><br>
                         </div></div>
 				</div>
+				<div class="side" title="Slide 1">
+				<h2>Side Content</h2>
+				<p>This is the side content that you want to de-clutter from your page.</p>
+				<p>You can apply whatever CSS rules you like to this element, only the position and behaviour will be changed by the plugin.</p>
+				<p>There are plenty of configurable settings if you want to change the default behaviour!</p>
+			</div>
 
 
 			<div class="content">
@@ -70,5 +77,10 @@
 				el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
 			} );
 		</script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.sidecontent.js"></script>
+	<script type="text/javascript">
+		$(".side").sidecontent();
+	</script>
 	</body>
 </html>
