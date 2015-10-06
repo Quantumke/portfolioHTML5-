@@ -64,3 +64,10 @@
 #notfound {
   margin:0 auto;
 }
+.about-me-large{
+height: 400px;
+}
+.about-me{
+    height: 400px;
+    background: red;
+}
