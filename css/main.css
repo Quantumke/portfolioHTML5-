@@ -8,6 +8,7 @@
 			-webkit-border-top-left-radius: 1em;
 			border-bottom-left-radius: 1em;
 			border-top-left-radius: 1em;
+     width: 30px;
 		}
 
 		.sidecontentpullout:hover {
@@ -21,6 +22,7 @@
 			-moz-border-radius-bottomleft: 1em;
 			-webkit-border-bottom-left-radius: 1em;
 			border-bottom-left-radius: 1em;
+           
 		}
 
 		.sidecontent > div > div {

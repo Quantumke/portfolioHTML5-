@@ -148,7 +148,7 @@
 			$("#" + sliderId).css({
 				position: "absolute",
 				overflow: "hidden",
-				top: "0",
+				top: "53px",
 				width: "0px",
 				zIndex: "1",
 				opacity: config.opacity
@@ -168,7 +168,7 @@
 			// Set up the pullout
 			$("#" + sliderId + "_pullout").css({
 				position: "absolute",
-				top: totalPullOutHeight + "px",
+				top: totalPullOutHeight + "3px",
 				zIndex: "1000",
 				cursor: "pointer",
 				opacity: config.opacity
@@ -187,7 +187,7 @@
 			} else {
 				$("#" + sliderId + "_pullout").css({
 					right: "0px",
-					width: pulloutWidth + "px"
+					width: pulloutWidth + ""
 				});
 			}
 
