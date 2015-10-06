@@ -14,13 +14,20 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/set2.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 
 	</head>
 	<body>
 	
+	<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+					<h1 class="main-title">Benson <span class="thin">Mburu</span></h1>
+				</div>
+
+
 			<div class="content">
 				
-				<h2>Phoebe</h2>
+
 				<div class="grid">
 					<figure class="effect-phoebe">
 						<img src="img/3.jpg" alt="img03"/>
@@ -48,7 +55,10 @@
 				
 			</div>
 			
-			
+			<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
 		<script>
 			// For Demo purposes only (show hover effect on mobile devices)
 			[].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
