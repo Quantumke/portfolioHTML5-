@@ -1,6 +1,6 @@
 .sidecontentpullout {
-			background-color: Black;
-			color: White;
+			background-color: #9CCDAB;
+			color: black;
 			padding: 4px 3px;
 			-moz-border-radius-bottomleft: 1em;
 			-moz-border-radius-topleft: 1em;
@@ -12,7 +12,7 @@
 		}
 
 		.sidecontentpullout:hover {
-			background-color: #444444;
+			background-color: #1A3D27;
 			color: White;
 		}
 
@@ -29,3 +29,38 @@
 			padding-left: 10px;
 			padding-right: 40px;
 		}
+.pull-out-head{
+    text-align: justify;
+   width: 300px;
+
+}
+.btn-a{
+    height: 35px;
+    width: auto;
+    cursor: pointer;
+    border: 2px solid #468558;
+    background: #A8E9BF;
+    	-moz-border-radius-bottomleft: 1em;
+			-moz-border-radius-topleft: 1em;
+			-webkit-border-bottom-left-radius: 1em;
+			-webkit-border-top-left-radius: 1em;
+    color: #05260F;
+    text-align: center;
+    padding-top: 5px;
+
+}
+.hdr-pll-out{
+    height: 40px;
+    background: #A8E9BF;
+    width: 100%;
+    color: #05260F;
+    text-align: center;
+
+}
+.my-text{
+    width: 250px;
+    text-align: justify;
+}
+#notfound {
+  margin:0 auto;
+}
