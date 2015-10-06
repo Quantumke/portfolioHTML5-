@@ -69,5 +69,22 @@ height: 400px;
 }
 .about-me{
     height: 400px;
+   border: red solid 1px;
+}
+.about-head{
     background: red;
+    height: 10%;
+    margin-left: -11px;
+    width: 110%;
+}
+.about-body{
+    height: 80%;
+    background: yellow;
+}
+.about-footer{
+    height: 10%;
+    background: red;
+     margin-left: -11px;
+    width: 110%;
+}
 }
