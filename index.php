@@ -129,9 +129,11 @@ if ($conn->connect_error) {
        </div>
    </div>
    
-   
+     
     <div class="content">
-    <?Php 
+    
+        <div class="grid">
+        <?Php 
 $sql = "SELECT * FROM projects";
 $result = $conn->query($sql);
 
@@ -139,10 +141,9 @@ if ($result->num_rows > 0) {
      // output data of each row
      while($row = $result->fetch_assoc()) {
 ?>
-        <div class="grid">
-          
+         
             <figure class="effect-phoebe">
-                <img src="img/<?php echo $row['project-screen'];?>" alt="" />
+                      <img src="img/<?php echo $row['project-screen'];?>" alt="" />
                 <figcaption>
                     <h2> <span><?php echo $row['project_name'];?></span></h2>
                     <p> 
@@ -150,18 +151,19 @@ if ($result->num_rows > 0) {
                          <a href="<?php echo $row['github_fork'];?>"><i class="fa fa-code-fork"></i></a>
                         <a href="<?php echo $row['github_link'];?>"><i class="fa fa-github"></i></a>
                        
-                       
-                    </p>
-                </figcaption>
-                <?php 
+                                     </p>
+                                      
+                  </figcaption>
+               
+              </figure>
+           <?php 
                                              }
 } else {
      echo "0 results";
 }
 
 $conn->close();
-?> 
-            </figure>
+?>
 <!--
             <figure class="effect-phoebe">
                 <img src="img/7.jpg" alt="img07" />
@@ -225,9 +227,14 @@ $conn->close();
             </figure>
 -->
             <!------------------------------------------------------------------->
+        </div> 
+        
+          
+    
+   
         </div>
 
-    </div>
+ 
 
 
 
