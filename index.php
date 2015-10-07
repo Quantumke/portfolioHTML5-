@@ -1,3 +1,16 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "master12!";
+$dbname = "portfolio";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+}
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
@@ -118,21 +131,38 @@
    
    
     <div class="content">
+    <?Php 
+$sql = "SELECT * FROM projects";
+$result = $conn->query($sql);
 
-
+if ($result->num_rows > 0) {
+     // output data of each row
+     while($row = $result->fetch_assoc()) {
+?>
         <div class="grid">
-           
+          
             <figure class="effect-phoebe">
-                <img src="img/3.jpg" alt="img03" />
+                <img src="img/<?php echo $row['project-screen'];?>" alt="" />
                 <figcaption>
-                    <h2>Plain <span>Phoebe</span></h2>
-                    <p>
-                        <a href="#"><i class="fa fa-fw fa-user"></i></a>
-                        <a href="#"><i class="fa fa-fw fa-heart"></i></a>
-                        <a href="#"><i class="fa fa-fw fa-cog"></i></a>
+                    <h2> <span><?php echo $row['project_name'];?></span></h2>
+                    <p> 
+                        <a href="<?php echo $row['link'];?>"><i class="fa fa-eye"></i></a>
+                         <a href="<?php echo $row['github_fork'];?>"><i class="fa fa-code-fork"></i></a>
+                        <a href="<?php echo $row['github_link'];?>"><i class="fa fa-github"></i></a>
+                       
+                       
                     </p>
                 </figcaption>
+                <?php 
+                                             }
+} else {
+     echo "0 results";
+}
+
+$conn->close();
+?> 
             </figure>
+<!--
             <figure class="effect-phoebe">
                 <img src="img/7.jpg" alt="img07" />
                 <figcaption>
@@ -143,7 +173,9 @@
                         <a href="#"><i class="fa fa-fw fa-cog"></i></a>
                     </p>
                 </figcaption>
+-->
                 <!---------------------------------->
+<!--
             </figure>
                <figure class="effect-phoebe">
                 <img src="img/7.jpg" alt="img07" />
@@ -156,9 +188,11 @@
                     </p>
                 </figcaption>
             </figure>
+-->
             <!------------------------------------------------------------------->
             
               <!---------------------------------->
+<!--
             </figure>
                <figure class="effect-phoebe">
                 <img src="img/afc.png" alt="img07" />
@@ -172,8 +206,10 @@
 </p>
                 </figcaption>
             </figure>
+-->
             <!------------------------------------------------------------------->
               <!---------------------------------->
+<!--
             </figure>
                <figure class="effect-phoebe">
                 <img src="img/batsvssup.png" alt="BATMANVSSUP" />
@@ -187,6 +223,7 @@
                     </p>
                 </figcaption>
             </figure>
+-->
             <!------------------------------------------------------------------->
         </div>
 
