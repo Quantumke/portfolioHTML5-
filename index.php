@@ -147,9 +147,9 @@ if ($result->num_rows > 0) {
                 <figcaption>
                     <h2> <span><?php echo $row['project_name'];?></span></h2>
                     <p> 
-                        <a href="<?php echo $row['link'];?>"><i class="fa fa-eye"></i></a>
-                         <a href="<?php echo $row['github_fork'];?>"><i class="fa fa-code-fork"></i></a>
-                        <a href="<?php echo $row['github_link'];?>"><i class="fa fa-github"></i></a>
+                        <a href="<?php echo $row['link'];?>"><i class="fa fa-eye fa-2x"></i></a>
+                         <a href="<?php echo $row['github_fork'];?>"><i class="fa fa-code-fork fa-2x"></i></a>
+                        <a href="<?php echo $row['github_link'];?>"><i class="fa fa-github fa-2x"></i></a>
                        
                                      </p>
                                       
